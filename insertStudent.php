@@ -24,7 +24,7 @@ $sql= "INSERT INTO `students`(`fname`, `lname`, `gender`, `age`) VALUES('$fname'
 $result = $connect -> query($sql);
 if($result){
      echo "<p>Студент добавлен</p>";
-     header("Location:index.php");
+    //  header("Location:index.php"); это был редирект(перезагрузка страницы)
 }   else    {
     "Что-то пошло не так. 1 ошибка и ты ошибся (АУФ)";
 }
