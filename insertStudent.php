@@ -22,10 +22,11 @@ $connect->set_charset("utf8");
 $sql= "INSERT INTO `students`(`fname`, `lname`, `gender`, `age`) VALUES('$fname','$lname', '$gender', $age)";
 // выполнение запроса
 $result = $connect -> query($sql);
+sleep(1);// задержка в секундах
 if($result){
-     echo "<p>Студент добавлен</p>";
+     echo "ok";
     //  header("Location:index.php"); это был редирект(перезагрузка страницы)
 }   else    {
-    "Что-то пошло не так. 1 ошибка и ты ошибся (АУФ)";
+    echo "Что-то пошло не так. 1 ошибка и ты ошибся (АУФ)";
 }
 ?>
