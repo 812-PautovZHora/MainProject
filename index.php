@@ -10,7 +10,7 @@
     
 </head>
 <body>
-
+ 
 <!-- добавление студентов формаs -->
      <form id="form-insert-student"> <!--action="insertStudent.php" method="POST" это раньше было частью редиректа -->
         <input type="text" name="fname" id="fname" placeholder="Введите имя" required><br>
