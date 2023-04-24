@@ -41,8 +41,12 @@
     $result = $connect->query($sql);
     //вывести результаты запроса на страницу
     while ($row = $result->fetch_assoc()){// fetch как get(получить), assoc = ассоциативный массив, num = численный, all
-        echo "<div>
+        echo "<div class = 'student' data-id='$row[student_id]'>
                 $row[lname], $row[fname], $row[gender], $row[age],
+                <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-heart-fill like' viewBox='0 0 16 16'>
+  <path fill-rule='evenodd' d='M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z'/>
+</svg>
+<span class = 'num-like'>$row[num_like]</span>
              </div>";
     } 
     ?>

@@ -14,7 +14,7 @@ $connect = new mysqli(HOST, USER, PASSWORD, DB);
 if ($connect->connect_error){
      exit("Ошибка подключения к базе данных: ".$connect->connect_error);
  }
-   
+
 // установка кодировки UTF 8
 $connect->set_charset("utf8"); 
 
@@ -27,6 +27,6 @@ if($result){
      echo "ok";
     //  header("Location:index.php"); это был редирект(перезагрузка страницы)
 }   else    {
-    echo "Что-то пошло не так. 1 ошибка и ты ошибся (АУФ)";
+    echo "Что-то пошло не так. ";
 }
 ?>
