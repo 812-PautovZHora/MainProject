@@ -28,14 +28,3 @@
 .show-message{
     transform: translateY(0px);
 }
-.like{
-    fill: gray;
-    width: 14px;
-}
-.like:hover{
-    fill: pink;
-    width: 15px;
-}
-.like--active{
-    fill: purple;
-}

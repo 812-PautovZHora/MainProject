@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 require_once("config.php"); 
 
 // соединение с БД 
@@ -24,4 +24,4 @@ if($result){
 }   else    {
    echo "Что-то пошло не так.";
 }
-?>
+?> -->
