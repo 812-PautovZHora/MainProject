@@ -63,3 +63,42 @@ for(btn of btnsLike){
     btn.addEventListener('click', setLike("успешно", "1 ошибка и ты ошибся")); // калбек на сетлайк
 
 }
+
+// генерация рандомного числа  
+function getRandomInt(max){
+    return Math.floor(Math.random()*max);
+}
+// пример промиса 
+const myPromise = new Promise((resolve, reject)=>{
+    console.log("я - кот Борис");
+    let num;
+    setTimeout(()=>{
+        num = getRandomInt(10);
+        console.log(num);   
+         if(num >= 5){
+        resolve(num);
+    }
+    else{
+        reject("типичный макрос Илюши");
+    }
+    },3000);
+
+});
+
+myPromise
+.then( //неудачное выполнение
+    (result)=>{console.log(result);
+    result++;
+    console.log(result);
+    return result;
+    },
+)
+.then((result)=>{console.log(result*2)})
+.catch( //удачное выполнение
+    (result)=>{console.log(result)}
+)
+.finally( //во всех случаях
+    ()=>{
+        console.log("конец промиса")
+    }
+);
