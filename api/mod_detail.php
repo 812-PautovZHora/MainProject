@@ -8,6 +8,6 @@
         $myrow  =  $result->fetch_assoc();
 
         echo "<div>
-            $myrow[lname],$myrow[fname],$myrow[age]
+            $myrow[lname],$myrow[fname],$myrow[age], $myrrow[group_id]
         </div>"; 
     }
